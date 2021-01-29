@@ -22,6 +22,54 @@
             <div id = "flex-box-result"></div>
         </div>
     </div>
+    <!--challenge 2-->
+    <div class = "container-2">
+        <h1>Challenge 2 - Bitcoin Generator</h1>
+
+        <div class="flex-box-container-2">
+            <button class = "btn btn-info" onclick="GenerateImg()"> Generate </button>
+        </div>
+
+        <div class = "flex-box-container-2"  id="bitcoin" >
+           
+        </div>
+    </div>
+    <!--Challenge 3-->
+    <div class = "container-3"> 
+        <h1>Challenge- 3 - Rock Paper Scissors Game</h1>
+        <div class = "flex-box-container-3">
+            <button class = "btn btn-primary" onclick="replay_rps()" >Replay!</button>
+        </div>
+
+
+        <div class = "flex-box-container-3" id = "flex-box-rps" >
+            <img class ="hvr-pulse-grow" id ="rock" src="https://www.pngitem.com/pimgs/m/109-1094400_rock-paper-scissors-png-clipart-rock-paper-scissor.png" onclick="play_rps(this)" width = 180 height = 150 alt="">
+           
+            <img class ="hvr-pulse-grow" id = "paper" src="https://www.vhv.rs/dpng/d/165-1650091_transparent-rock-paper-scissors-png-rock-paper-scissors.png" onclick="play_rps(this)" width = 180 height = 150 alt="">
+        
+            <img class ="hvr-pulse-grow" id = "scissors" src="https://www.pinclipart.com/picdir/middle/536-5360227_scissors-hand-rock-paper-scissors-png-clipart.png" onclick="play_rps(this)" width = 180 height = 150 alt="">
+        </div>    
+    </div>
+
+    <!--Challenge 4-->
+    <div class = "container-4"><h1>Challenge 4: Change color of all buttons</h1>
+       <div class ="flex-box-container-4"> 
+            <form >
+                <select class = "backdrop" id="background" onchange="ButtonColorChange(this)">
+                    <option value="reset">Reset</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="random">Random</option>
+                </select>
+            </form>
+
+            <button class = "btn btn-primary">Button 1</button>
+            <button class = "btn btn-danger">Button 2</button>
+            <button class = "btn btn-success">Button 3</button>
+            <button class = "btn btn-warning">Button 4</button>
+        </div>
+    </div>
     <script src = "javascript/script.js">    </script>
 </body>
 </html>

@@ -1,13 +1,19 @@
-.container-1{
+body {
+    background-image: url("http://gdj.graphicdesignjunction.com/wp-content/uploads/2012/08/minimal-background-pattern-wordpress-2.jpg");
+    background-attachment: fixed;
+}
+
+.container-1, .container-2 ,.container-3, .container-4{
     border: 1px solid black;
     text-align: center;
     margin: auto;
     width: 70%;
 }
 
-.flex-box-container-1 {
+.flex-box-container-1 ,.flex-box-container-2, .flex-box-container-3, .flex-box-container-4{
     display: flex;
     border: 1px solid black;
+    margin:auto;
     padding: 10px;
     justify-content: space-around;
     flex-direction: row;
@@ -18,6 +24,46 @@
     padding: 10px;
     display:flex;
     align-items: center;
-    border: 1px solid black;
 }
 
+.flex-box-container-2 img{
+    margin: 10px;
+    height: 120;
+    width: 200;
+    box-shadow: 10px 10px 5px grey ;
+}
+
+/*hover test*/
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  
+  

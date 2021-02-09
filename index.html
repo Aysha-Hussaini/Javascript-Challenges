@@ -70,6 +70,45 @@
             <button class = "btn btn-warning">Button 4</button>
         </div>
     </div>
+
+    <!--Challenge 5 BLACKJACK GAME-->
+    <div class = "container-5">
+        <h1> Challenge-5 BLACKJACK GAME</h1>
+        <h3> <span id = "blackjack-results">Lets play! </span></h3>
+        
+        <div class="blackjack-game-flexbox" >
+            <div  id="player" >
+                <!--cards-->
+                <h2 style="color: aliceblue;">You :<span id="player-score"> 0 </span></h2>
+            </div>   
+            <div  id="bot">
+                <!--cards-->
+                <h2 style="color: aliceblue;">Dealer :<span id ="bot-score"> 0 </span></h2>
+            </div>
+        </div>
+        <div class = "flex-box-container-5" >
+            <div>
+            <button class = "btn-lg btn-info mr-2" id="hit-button"> HIT</button>
+            <button class =  "btn-lg btn-warning mr-2" id="stand button">STAND</button>
+            <button class = "btn-lg btn-danger mr-2" id = "deal-button">DEAL</button>
+            </div>
+        </div>
+        
+        <div class = "flex-box-container-6">
+            <table id="score-table"> 
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id = "wins"> 0 </span></td>
+                    <td><span id = "losses"> 0 </span></td>
+                    <td><span id = "draws"> 0 </span></td>                    
+                </tr>
+            </table>
+        </div>
+    </div>    
     <script src = "javascript/script.js">    </script>
 </body>
 </html>

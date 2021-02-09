@@ -193,3 +193,45 @@ function buttonsRandom() {
         all_buttons[i].classList.replace(all_buttons[i].classList[1] , choices[Math.floor(Math.random() * 5)]);
     }
 }
+
+//Challenge 5: BLACKJACK Game
+
+let blackjack = {
+    'you' : {'resultSpan' : '#player-score','div' : '#player', 'score' : 0},
+    'dealer' : {'resultSpan' : '#bot-score','div' : '#bot', 'score' : 0}
+}
+
+const YOU = blackjack['you'];
+const DEALER = blackjack['dealer'];
+const hitsound = new Audio('style/sounds/swish.m4a');
+
+
+document.querySelector('#hit-button').addEventListener('click', blackjackhit);
+
+function blackjackhit (){
+    show_card(DEALER);
+}
+ 
+function show_card(active_player) {
+    let card_img = document.createElement('img');
+    card_img.src = 'style/images/K.png';
+    document.querySelector(active_player['div']).appendChild(card_img);
+    hitsound.play();
+}
+
+document.querySelector('#deal-button').addEventListener('click', blackjackDeal);
+function blackjackDeal(){
+    let yourImg = document.querySelector(YOU['div']).querySelectorAll('img');
+    for (i = 0; i< yourImg.length ; i++) {
+        yourImg[i].remove();
+    } 
+    
+    let dealerImg = document.querySelector(DEALER['div']).querySelectorAll('img');
+    for (i = 0; i< dealerImg.length ; i++) {
+        dealerImg[i].remove();
+    }
+    
+}
+
+
+

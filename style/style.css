@@ -1,19 +1,18 @@
 body {
-    background-image: url("http://gdj.graphicdesignjunction.com/wp-content/uploads/2012/08/minimal-background-pattern-wordpress-2.jpg");
-    background-attachment: fixed;
+  background-image: url("http://gdj.graphicdesignjunction.com/wp-content/uploads/2012/08/minimal-background-pattern-wordpress-2.jpg");
+  background-attachment: fixed;
 }
 
-.container-1, .container-2 ,.container-3, .container-4{
+.container-1, .container-2 ,.container-3, .container-4, .container-5{
     border: 1px solid black;
     text-align: center;
     margin: auto;
     width: 70%;
 }
 
-.flex-box-container-1 ,.flex-box-container-2, .flex-box-container-3, .flex-box-container-4{
+.flex-box-container-1 ,.flex-box-container-2, .flex-box-container-3, .flex-box-container-4, .blackjack-game-flexbox, .flex-box-container-5, .flex-box-container-6{
     display: flex;
     border: 1px solid black;
-    margin:auto;
     padding: 10px;
     justify-content: space-around;
     flex-direction: row;
@@ -66,4 +65,25 @@ body {
     animation-direction: alternate;
   }
   
+  .blackjack-game-flexbox, .flex-box-container-5 {
+    background: url("https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg");
+    background-position: bottom;
+  }
   
+  .blackjack-game-flexbox div{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    height: 350px;
+    flex:1;
+  }
+
+  .blackjack-game-flexbox div img {
+    width : 25%;
+    padding: 10px;
+  }
+
+  #score-table td, th{
+    border: 1px solid black;
+    padding: 5px; 
+  }
